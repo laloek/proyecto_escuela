@@ -1,0 +1,11 @@
+<div class="menu">
+	<section>
+		<a class="agregar" href="#/agregarusuarios">Agregar nuevo usuario</a>
+	</section>
+</div>
+<div class="center" *ngFor="let p of usuarios;">
+	<a class="consultar" href="#/perfiles/{{p.idUsuario}}" (click)="guardarusuario(p.idUsuario)">VER PERFILES</a>
+	<a class="eliminar" href="#/usuarios" (click)="eliminar(p)">ELIMINAR USUARIO</a>
+	<a class="modificar" href="#/modificarusuario/{{p.idUsuario}}">MODIFICAR USUARIO</a>
+	<h3>{{p.nombre+" "+p.apellidoP+" "+p.apellidoM}}</h3>
+</div>

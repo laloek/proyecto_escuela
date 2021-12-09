@@ -1,0 +1,14 @@
+<div class="center">
+	<div class="form">
+		<h1>Agregar perfil nuevo</h1>
+		<input matInput [(ngModel)]="perfiles.titulo" type="text" placeholder="Escriba un titulo">
+		<input matInput [(ngModel)]="perfiles.face" type="text" placeholder="Escribe tu facebook">
+		<input matInput [(ngModel)]="perfiles.twitter" type="text" placeholder="Escribe tu twitter">
+		<input matInput [(ngModel)]="perfiles.inst" type="text" placeholder="Escribe tu instagram">
+		<textarea row="10" matInput [(ngModel)]="perfiles.acerca" placeholder="Escriba un acerca de ti"></textarea>
+		<label for="fotos">Fotos</label>
+		<input class="botonfoto" accept="image/png,image/jpeg" #foto required id="fotos" multiple type="file">
+		<a class="guardar" (click)="guardar()">Crear nuevo perfil</a>
+		<a class="regresar" (click)="regresar()">Volver</a>
+	</div>
+</div>

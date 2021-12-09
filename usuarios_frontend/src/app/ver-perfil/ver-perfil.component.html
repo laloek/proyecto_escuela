@@ -1,0 +1,31 @@
+<a href="#/perfiles/{{usuario.idUsuario}}" class="regresar">Regresar</a>
+<div class="perfil">
+	<div>
+		<h3>Perfil</h3>
+		<h4>{{perfil.titulo}}</h4>
+	</div>
+	<aside>
+		<h5>Acerca de mi</h5>
+		<p>{{perfil.acerca}}</p>
+	</aside>
+	<section>
+		<img [src]="resolverFoto(perfil.foto)" alt="IMAGEN">
+	</section>
+	<aside>
+		<h5>Detalles</h5>
+		<p><b>Nombre:</b></p>
+		<p>{{usuario.nombre}} {{usuario.apellidoP}} {{usuario.apellidoM}}</p>
+		<p><b>Edad:</b></p>
+		<p>{{usuario.edad}} años</p>
+		<p><b>Ubicacion:</b></p>
+		<p>{{usuario.ubicacion}}</p>
+		<div>
+			<a *ngIf="perfil.face!" href="">facebook</a>
+			<a *ngIf="perfil.twitter!" href="">twitter</a>
+			<a *ngIf="perfil.inst!" href="">instagram</a>
+		</div>
+	</aside>
+</div>
+<div class="foot">
+	<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de <br>relleno estándar de las industrias desde el año 1500,</p>
+</div>

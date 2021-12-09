@@ -1,0 +1,12 @@
+<div class="center">
+	<div class="form">
+		<h1>Agregar perfil nuevo</h1>
+		<input matInput [(ngModel)]="usuarios.nombre" type="text" placeholder="Escriba tu nombre">
+		<input matInput [(ngModel)]="usuarios.apellidoP" type="text" placeholder="Escribe tu apellido paterno">
+		<input matInput [(ngModel)]="usuarios.apellidoM" type="text" placeholder="Escribe tu apellido materno">
+		<input matInput [(ngModel)]="usuarios.edad" type="text" placeholder="Escribe tu edad" value="">
+		<textarea row="10" matInput [(ngModel)]="usuarios.ubicacion" placeholder="Escribe tu ubicacion"></textarea>
+		<a class="guardar" (click)="guardar()">Modificar usuario</a>
+		<a class="regresar" (click)="regresar()">Volver</a>
+	</div>
+</div>

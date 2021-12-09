@@ -1,0 +1,9 @@
+.regresar{display:inline-block;vertical-align:middle;font-weight:bold;text-align:center;width:200px;text-decoration:none;font-size:20px;padding:10px 0px;border-radius:20px;color:#fff;background:red;margin:50px auto 50px;display:table;}
+.perfil{display:flex;flex-wrap:wrap;max-width:1200px;margin:0px auto;}
+.perfil div{width:100%;text-align:center;margin-bottom:100px;}
+.perfil div h3{font-size:50px;margin-bottom:30px;}
+.perfil div h4{font-size:30px;}
+.perfil aside{width:30%;}
+.perfil aside h5{margin-bottom:50px;font-size:25px;}
+.perfil section{width:40%;}
+.foot{background:rgb(82 86 89);padding:100px 0px;text-align:center;color:#fff;}
